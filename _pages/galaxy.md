@@ -1,0 +1,4 @@
+---
+title: "Galaxy"
+permalink: /galaxy/
+---
