@@ -3,6 +3,8 @@ permalink: /spectralclustering/
 title: "SpectralClustering"
 ---
 
+{% include figure image_path="/images/bedroom.jpg" alt="Bedroom" caption="The Bedroom" %}
+
 Spectral clustering uses networks of neighbors rather than proximity to
 some centroid to partition data. It has the unique feature of being able
 to cluster concentric circles as in the common “bull’s eye” example, but
@@ -35,11 +37,8 @@ which can raise problems for large datasets.
 
 ## Example
 
-I’m clustering pixels in a famous painting to demonstrate the elements
-of spectral clustering. I will reduce the painting to just a handful of
-colors. More detailed treatment of Spectral clustering can be found here
-and here. The main purpose of this example is to make some
-visualizations that will help develop an intuition of the technique.
+I’m clustering pixels in the famous painting "The bedroom" to demonstrate the elements of spectral clustering. I will reduce the painting to just a handful of
+colors. More detailed treatment of Spectral clustering can be found [here](https://ai.stanford.edu/~ang/papers/nips01-spectral.pdf) and [here](https://towardsdatascience.com/spectral-clustering-aba2640c0d5b). The main purpose of this example is to explain what I like about this technique and to make some visualizations that will help develop intuition.
 
 <div style="margin-bottom:50px;">
 
@@ -86,4 +85,4 @@ form a distinct and well defined cluster (cluster 10, brown color).
 Below a selection of those points are plotted: the Bed and Chair from
 the painting.
 
-![](jpegSpectralClustering_files/figure-gfm/unnamed-chunk-8-1.png)<!-- -->
+{% include figure image_path="/images/jpegSpectralClustering_files/figure-gfm/unnamed-chunk-8-1.png" alt="Workflow image" caption="Cluster 10 made a disctinct cluster. It corresponds to the Bed and Chair" %}
