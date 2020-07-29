@@ -6,6 +6,8 @@ main:
     url: /
   - title: "Galaxy"
     url: /galaxy/
+  - title: "SpectralClustering"
+    url: /spectralclustering/
   # - title: "Sample Collections"
   #   url: /collection-archive/
   # - title: "Sitemap"
