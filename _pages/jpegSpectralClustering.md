@@ -1,5 +1,7 @@
-Spectral Clustering
-================
+---
+permalink: /spectralclustering/
+title: "SpectralClustering"
+---
 
 Spectral clustering uses networks of neighbors rather than proximity to
 some centroid to partition data. It has the unique feature of being able
