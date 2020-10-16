@@ -6,13 +6,13 @@ title: "SpectralClustering"
 {% include figure image_path="/images/bedroom.jpg" alt="Bedroom" caption="The Bedroom" %}
 
 Spectral clustering uses networks of neighbors rather than proximity to
-some centroid to partition data. It has the unique feature of being able
-to cluster concentric circles as in the common “bull’s eye” example, but
-the more practical implication of spectral clustering is it doesn’t
+some centroid to partition data. This means it has the ability to 
+to cluster concentric circles as in the “bull’s eye” example, but 
+practially speaking the benefit is that spectral clustering doesn’t
 constrain cluster shape to being convex. I think that it’s a more
 natural treatment for a lot of datasets and often results in improved
-results relative to more commonly used methods. Plus the math behind it
-is pretty cool.
+results relative to more commonly used methods. Plus it involves a pretty
+elegant matrix decomposition step.  
 
 Spectral refers to the fact that it uses eigenvectors of a network
 proximity matrix. That’s the most surprising part of the technique to
@@ -28,8 +28,9 @@ tuneable non-linearity similar to support vector machines.
 
 Drawbacks to spectral clustering are (1) in most cases it requires you
 to tune at least one new hyperparameter for the distance kernel (eg
-sigma for a gaussian kernel) and (2) it requires matrix decomposition
-which can raise problems for large datasets.
+sigma for a gaussian kernel) and (2) it's not a great fit out-of-the box
+for big datasets.  The proximity network can get pretty big and the 
+matrix decomposition can also be a challenge.  
 
 <div style="margin-bottom:50px;">
 
@@ -37,8 +38,8 @@ which can raise problems for large datasets.
 
 ## Example
 
-I’m clustering pixels in the famous painting "The bedroom" to demonstrate the elements of spectral clustering. I will reduce the painting to just a handful of
-colors. More detailed treatment of Spectral clustering can be found [here](https://ai.stanford.edu/~ang/papers/nips01-spectral.pdf) and [here](https://towardsdatascience.com/spectral-clustering-aba2640c0d5b). The main purpose of this example is to explain what I like about this technique and to make some visualizations that will help develop intuition.
+I’m clustering pixels in the famous painting "The Bedroom" to demonstrate the elements of spectral clustering. I will reduce the painting to just a handful of
+colors. I hope that this example will be an intuitive explanation of the technique:  more detailed treatment of spectral clustering can be found [here](https://ai.stanford.edu/~ang/papers/nips01-spectral.pdf) and [here](https://towardsdatascience.com/spectral-clustering-aba2640c0d5b). I'm just trying to elaborate on what I like about this technique and make some useful visualizations.
 
 <div style="margin-bottom:50px;">
 
