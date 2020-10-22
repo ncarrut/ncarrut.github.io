@@ -124,7 +124,7 @@ author:
       icon: "fab fa-fw fa-docker"
       url: "https://hub.docker.com/u/ncarrut/"
     - label: "Google Scholar"
-      icon: "fab fa-fw fa-graduation-cap"
+      icon: "fas fa-fw fa-graduation-cap"
       url:  "https://scholar.google.ca/citations?user=BArOJrIAAAAJ"
 
 
